@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+{% load static %}
+
+<head>
+
+ <script src="{% static 'bower_components/webcomponentsjs/webcomponentsloader.js' %}"></script>
+
+      <link rel = "import" href = "bower_components/polymer/polymer.html">
+      <link rel = "import" href = "define-element.html">
+
+
+
+	<link rel="import" href="bower_components/polymer/polymer-element.js">
+	<script src="{% static 'bower_components/polymer/polymer-element.js'%}"></script>
+
+	<title>
+		Sort/Order keys
+		in JavaScript
+	</title>
+
+	<style>
+		body {
+			text-align: center;
+		}
+
+	</style>
+</head>
+
+<body>
+<define-element>
+
+</define-element>
+
+
+	<button class="btn btn-sm btn-outline" onclick="showdisp()">
+		Click Here
+	</button>
+
+	<p id="wink"></p>
+
+	<script>
+		var el_down = document.getElementById("wink");
+
+		var GFG_Object = {
+	34: "thirty-four",
+     90: "ninety",
+    91: "ninety-one",
+    21: "twenty-one",
+    61: "sixty-one",
+    9: "nine",
+    2: "two",
+    6: "six",
+    3: "three",
+    8: "eight",
+    80: "eighty",
+    81: "eighty-one",
+    "nine-hundred": 900,
+    "Ninety-Nine": 99,
+
+		};
+
+		function showdisp() {
+
+			// Getting the keys of JavaScript Object.
+			Modified_Object = Object.keys(GFG_Object)
+
+			// Sort and calling a method on
+			// keys on sorted fashion.
+			.sort().reduce(function(Obj, key) {
+
+				// Adding the key-value pair to the
+				// new object in sorted keys manner
+				Obj[key] = GFG_Object[key];
+				return Obj;
+			}, {});
+			el_down.innerHTML =
+					JSON.stringify(Modified_Object);
+		}
+	</script>
+</body>
+
+</html>

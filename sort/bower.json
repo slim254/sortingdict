@@ -1,0 +1,21 @@
+{
+  "name": "sort",
+  "authors": [
+    "slim254 <collinsokore2@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "first.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Polymer": "polymer/Polymer#^3.4.1"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "sortingdict",
+  "authors": [
+    "slim"
+  ],
+  "description": "null",
+  "main": "first.html",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^3.4.1"
+  }
+}
